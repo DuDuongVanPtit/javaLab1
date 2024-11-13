@@ -3,19 +3,18 @@ package model;
 import lombok.Data;
 
 @Data
-public class User {
+public class Nhanvien233 {
     private int id;
     private String username;
-    private String email;
     private String password;
+    private String email;
 
-    public User(int id, String username, String email, String password) {
-        this.id = id;
+    public Nhanvien233() {}
+
+    public Nhanvien233(String username, String password, String email) {
         this.username = username;
-        this.email = email;
         this.password = password;
-    }
-
-    public User() {
+        this.email = email;
     }
 }
+

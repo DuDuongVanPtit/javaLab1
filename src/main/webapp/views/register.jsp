@@ -1,24 +1,23 @@
 <%--
   Created by IntelliJ IDEA.
   User: ADMIN88
-  Date: 8/29/2024
-  Time: 4:41 PM
+  Date: 10/11/2024
+  Time: 13:40
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Register</title>
 </head>
 <body>
-    <form action="register" method="post">
-        <label>Username:</label>
-        <input type="text" name="username">
-        <label>Email:</label>
-        <input type="text" name="email">
-        <label>Password:</label>
-        <input type="password" name="password">
-        <input type="submit" value="Register">
-    </form>
+<!-- register.jsp -->
+<form action="register" method="post">
+    Username: <input type="text" name="username" required><br>
+    Password: <input type="password" name="password" required><br>
+    Email: <input type="email" name="email" required><br>
+    <button type="submit">Register</button>
+</form>
+
 </body>
 </html>

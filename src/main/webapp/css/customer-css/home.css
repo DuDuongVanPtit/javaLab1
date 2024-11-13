@@ -1,0 +1,211 @@
+/* Reset cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Header trên cùng */
+.top-header {
+    background-color: #d32f2f;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.top-header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-header a,
+.right-header a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.right-header a:hover {
+    text-decoration: underline;
+}
+
+/* Logo và thanh điều hướng */
+.main-nav {
+    background-color: #d32f2f;
+    padding: 15px 0;
+}
+
+.main-nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #ffeb3b;
+}
+
+.nav-links a.active {
+    font-weight: bold;
+    color: #ffeb3b; /* Màu nổi bật */
+    background-color: #d32f2f; /* Màu nền đậm hơn */
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Banner */
+.banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url("https://kuongngan.com/wp-content/uploads/2023/08/datlichhen-1.jpg");
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+.carousel-dots {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.carousel-dots .dot {
+    height: 10px;
+    width: 10px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* Phần "Top xe máy bán chạy" */
+.top-products {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.top-products h2 {
+    font-size: 24px;
+    color: #d32f2f;
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    background-color: #d32f2f;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+.product-filters {
+    margin-bottom: 20px;
+}
+
+.product-filters .filter {
+    padding: 10px 20px;
+    margin: 0 5px;
+    border: 1px solid #d32f2f;
+    background-color: #fff;
+    color: #d32f2f;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.product-filters .filter.active,
+.product-filters .filter:hover {
+    background-color: #d32f2f;
+    color: #fff;
+}
+
+/* Danh sách sản phẩm */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product {
+    width: 150px;
+    text-align: center;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Nút chat nổi */
+.floating-buttons {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btn-chat {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.call {
+    background-color: #d32f2f;
+}
+
+.zalo {
+    background-color: #1877f2;
+}
