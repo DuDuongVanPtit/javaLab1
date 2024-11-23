@@ -12,8 +12,8 @@ import javax.servlet.http.HttpSession;
 
 public class NhanvienDAO {
     private static final String INSERT_USER_SQL = "INSERT INTO users (username, password, email) VALUES (?, ?, ?);";
-    private static final String SELECT_USER_BY_USERNAME_AND_PASSWORD = "SELECT * FROM nhanvien WHERE hovaten = ? AND matkhau = ?;";
-    private static final String UPDATE_PASSWORD_SQL = "UPDATE nhanvien SET matkhau = ? WHERE hovaten = ?";
+    private static final String SELECT_USER_BY_USERNAME_AND_PASSWORD = "SELECT * FROM nhanvien233 WHERE tendangnhap = ? AND matkhau = ?;";
+    private static final String UPDATE_PASSWORD_SQL = "UPDATE nhanvien233 SET matkhau = ? WHERE tendangnhap = ?";
 
     public boolean registerUser(Nhanvien233 user) {
         try (Connection connection = DatabaseConnection.getConnection();

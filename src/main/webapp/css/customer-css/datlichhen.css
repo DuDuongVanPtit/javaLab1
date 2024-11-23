@@ -17,6 +17,7 @@ body {
 .booking-container {
     width: 80%;
     margin-top: 5vh;
+    margin-bottom: 5vh;
     background-color: #fff;
     padding: 20px 30px;
     border-radius: 8px;
@@ -124,4 +125,18 @@ textarea {
 
 input[type="checkbox"] {
     margin-right: 5px;
+}
+
+#booking-btn{
+    background: none;
+    border: solid 1px red;
+    cursor: pointer;
+    color: red;
+    font-size: 1.2rem;
+    border-radius: 20px;
+    height: 40px;
+    width: 300px;
+}
+#booking-btn:hover{
+    background-color: #ddd !important;
 }

@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80vw;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.stepper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+
+h2 {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#customerList, #serviceList, #partList, #staffList {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#customerList th, #customerList td,
+#serviceList th, #serviceList td,
+#partList th, #partList td,
+#staffList th, #staffList td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+#customerList thead, #serviceList thead, #partList thead, #staffList thead {
+    background-color: #999;
+    color: white;
+}
+
+#customerList tbody tr:nth-child(odd),
+#serviceList tbody tr:nth-child(odd),
+#partList tbody tr:nth-child(odd),
+#staffList tbody tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+#customerList tbody tr:nth-child(even),
+#serviceList tbody tr:nth-child(even),
+#partList tbody tr:nth-child(even),
+#staffList tbody tr:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+#customerList tbody tr:hover,
+#serviceList tbody tr:hover,
+#partList tbody tr:hover,
+#staffList tbody tr:hover {
+    background-color: #d6e9f9;
+}
+
+#customerList tr.selected {
+    background-color: #c8e6c9;
+}
+
+.customerCheckbox {
+    cursor: pointer;
+}
+
+.highlight {
+    background-color: #ffff99;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+}
+
+form button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+#cancelAddCustomer {
+    background-color: #ddd;
+    color: #333;
+    font-weight: 600;
+}
+
+#cancelAddCustomer:hover {
+    background-color: #bbb;
+}
+
+.customer-info-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.customer-info-container {
+    max-height: 162px;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 8px 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.customer-info-list,
+.customer-service-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 55%;
+    font-size: 16px;
+    line-height: 1.8;
+    color: #555;
+}
+
+/*.customer-info-list li,*/
+/*.customer-service-list li {*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*}*/
+
+.customer-info-list li strong,
+.customer-service-list li strong {
+    width: 120px;
+    font-weight: bold;
+    color: #333;
+}
+
+.customer-info-container ul:last-child {
+    border-left: 2px solid #ccc;
+    padding-left: 20px;
+}
+
